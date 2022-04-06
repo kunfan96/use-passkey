@@ -1,0 +1,17 @@
+*.log*
+.cache
+.DS_Store
+.idea
+
+# npm
+node_modules
+package-lock.json
+.history
+
+# test
+**/test/coverage
+
+# dist file
+es
+lib
+dist
