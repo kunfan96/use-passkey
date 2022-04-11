@@ -1,5 +1,5 @@
 {
-    "name": "@chopper/passkey-vue",
+    "name": "@passkey/vue-compositions",
     "version": "0.0.1",
     "description": "usepasskey-vue",
     "main": "dist/index.esm.js",
@@ -8,11 +8,11 @@
         "dist"
     ],
     "scripts": {
+        "docs:dev": "vitepress dev docs",
         "build": "node scripts/build.mjs",
         "dev": "node scripts/watch.mjs",
         "prepare": "pnpm run build"
     },
     "author": "",
-    "license": "MIT",
-    "dependencies": {}
+    "license": "MIT"
 }
