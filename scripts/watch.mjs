@@ -6,7 +6,7 @@ const tsconfig = `${process.cwd()}/tsconfig.json`;
 const watch = (type = 'esm') =>
     esbuild
         .build({
-            entryPoints: ['lib/index.ts'],
+            entryPoints: ['src/index.ts'],
             bundle: true,
             outfile: `dist/index.${type}.js`,
             loader: {
