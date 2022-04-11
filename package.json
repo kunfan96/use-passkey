@@ -5,7 +5,7 @@
     "main": "index.js",
     "private": true,
     "scripts": {
-        "prepare": "is-ci || husky install",
+        "prepare": "build-all && is-ci || husky install",
         "build-all": "pnpm -r --filter ./packages run build",
         "changeset": "changeset",
         "version-packages": "changeset version",
