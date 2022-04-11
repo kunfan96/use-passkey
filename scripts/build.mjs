@@ -1,5 +1,7 @@
 import esbuild from 'esbuild';
 import { exec } from 'child_process';
+import { external } from './watch.mjs';
+
 const tsconfig = `${process.cwd()}/tsconfig.json`;
 
 const build = (type = 'esm') =>
@@ -11,6 +13,7 @@ const build = (type = 'esm') =>
             loader: {
                 '.ts': 'ts',
             },
+            external,
             format: type,
             color: true,
             tsconfig,
