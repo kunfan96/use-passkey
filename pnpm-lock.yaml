@@ -4,9 +4,11 @@ importers:
 
   .:
     specifiers:
+      '@algolia/client-search': ^4.13.0
       '@changesets/cli': ^2.21.1
       '@commitlint/cli': ^16.2.3
       '@commitlint/config-conventional': ^16.2.1
+      '@types/react': ^18.0.1
       '@typescript-eslint/eslint-plugin': ^5.16.0
       '@typescript-eslint/parser': ^5.16.0
       esbuild: ^0.14.28
@@ -14,12 +16,17 @@ importers:
       eslint-config-prettier: ^8.5.0
       husky: ^7.0.4
       is-ci: ^3.0.1
+      react: ^18.0.0
+      react-dom: ^18.0.0
       typescript: ^4.6.2
       vitepress: ^0.22.3
+      vue: ^3.2.31
     devDependencies:
+      '@algolia/client-search': registry.npmmirror.com/@algolia/client-search/4.13.0
       '@changesets/cli': 2.21.1
       '@commitlint/cli': 16.2.3
       '@commitlint/config-conventional': 16.2.1
+      '@types/react': registry.npmmirror.com/@types/react/18.0.1
       '@typescript-eslint/eslint-plugin': 5.16.0_1cfd4865634695f241f9ce8a00c153a8
       '@typescript-eslint/parser': 5.16.0_eslint@8.12.0+typescript@4.6.2
       esbuild: 0.14.28
@@ -27,8 +34,11 @@ importers:
       eslint-config-prettier: 8.5.0_eslint@8.12.0
       husky: 7.0.4
       is-ci: 3.0.1
+      react: registry.npmmirror.com/react/18.0.0
+      react-dom: registry.npmmirror.com/react-dom/18.0.0_react@18.0.0
       typescript: 4.6.2
-      vitepress: registry.npmmirror.com/vitepress/0.22.3
+      vitepress: registry.npmmirror.com/vitepress/0.22.3_7aebf275a2dd6217dfaf0027c04ea273
+      vue: registry.npmmirror.com/vue/3.2.31
 
   packages/react-hooks:
     specifiers: {}
@@ -56,7 +66,7 @@ packages:
     dependencies:
       '@babel/helper-validator-identifier': 7.16.7
       chalk: 2.4.2
-      js-tokens: 4.0.0
+      js-tokens: registry.npmmirror.com/js-tokens/4.0.0
     dev: true
 
   /@babel/runtime/7.17.8:
@@ -1647,10 +1657,6 @@ packages:
     resolution: {integrity: sha1-6PvzdNxVb/iUehDcsFctYz8s+hA=}
     dev: true
 
-  /js-tokens/4.0.0:
-    resolution: {integrity: sha512-RdJUflcE3cUzKiMqQgsCu06FPu9UdIJO0beYbPhHN4k6apgJtifcoCtT9bcxOpYBtpD2kCM6Sbzg4CausW/PKQ==}
-    dev: true
-
   /js-yaml/3.14.1:
     resolution: {integrity: sha512-okMH7OXXJ7YrN9Ok3/SXrnu4iX9yOk+25nqX4imS2npuvTYDmo/QEZoqwZkYaIDk3jVvBOTOIEgEhaLOynBS9g==}
     hasBin: true
@@ -2682,7 +2688,7 @@ packages:
       '@algolia/autocomplete-shared': registry.npmmirror.com/@algolia/autocomplete-shared/1.5.2
     dev: true
 
-  registry.npmmirror.com/@algolia/autocomplete-preset-algolia/1.5.2_algoliasearch@4.13.0:
+  registry.npmmirror.com/@algolia/autocomplete-preset-algolia/1.5.2_7938c62af9e2e3908b5b052ce2305b13:
     resolution: {integrity: sha512-3MRYnYQFJyovANzSX2CToS6/5cfVjbLLqFsZTKcvF3abhQzxbqwwaMBlJtt620uBUOeMzhdfasKhCc40+RHiZw==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@algolia/autocomplete-preset-algolia/-/autocomplete-preset-algolia-1.5.2.tgz}
     id: registry.npmmirror.com/@algolia/autocomplete-preset-algolia/1.5.2
     name: '@algolia/autocomplete-preset-algolia'
@@ -2692,6 +2698,7 @@ packages:
       algoliasearch: ^4.9.1
     dependencies:
       '@algolia/autocomplete-shared': registry.npmmirror.com/@algolia/autocomplete-shared/1.5.2
+      '@algolia/client-search': registry.npmmirror.com/@algolia/client-search/4.13.0
       algoliasearch: registry.npmmirror.com/algoliasearch/4.13.0
     dev: true
 
@@ -2833,12 +2840,13 @@ packages:
     version: 3.0.0
     dev: true
 
-  registry.npmmirror.com/@docsearch/js/3.0.0:
+  registry.npmmirror.com/@docsearch/js/3.0.0_7aebf275a2dd6217dfaf0027c04ea273:
     resolution: {integrity: sha512-j3tUJWlgW3slYqzGB8fm7y05kh2qqrIK1dZOXHeMUm/5gdKE85fiz/ltfCPMDFb/MXF+bLZChJXSMzqY0Ck30Q==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@docsearch/js/-/js-3.0.0.tgz}
+    id: registry.npmmirror.com/@docsearch/js/3.0.0
     name: '@docsearch/js'
     version: 3.0.0
     dependencies:
-      '@docsearch/react': registry.npmmirror.com/@docsearch/react/3.0.0
+      '@docsearch/react': registry.npmmirror.com/@docsearch/react/3.0.0_7aebf275a2dd6217dfaf0027c04ea273
       preact: registry.npmmirror.com/preact/10.7.1
     transitivePeerDependencies:
       - '@algolia/client-search'
@@ -2847,8 +2855,9 @@ packages:
       - react-dom
     dev: true
 
-  registry.npmmirror.com/@docsearch/react/3.0.0:
+  registry.npmmirror.com/@docsearch/react/3.0.0_7aebf275a2dd6217dfaf0027c04ea273:
     resolution: {integrity: sha512-yhMacqS6TVQYoBh/o603zszIb5Bl8MIXuOc6Vy617I74pirisDzzcNh0NEaYQt50fVVR3khUbeEhUEWEWipESg==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@docsearch/react/-/react-3.0.0.tgz}
+    id: registry.npmmirror.com/@docsearch/react/3.0.0
     name: '@docsearch/react'
     version: 3.0.0
     peerDependencies:
@@ -2857,11 +2866,36 @@ packages:
       react-dom: '>= 16.8.0 < 18.0.0'
     dependencies:
       '@algolia/autocomplete-core': registry.npmmirror.com/@algolia/autocomplete-core/1.5.2
-      '@algolia/autocomplete-preset-algolia': registry.npmmirror.com/@algolia/autocomplete-preset-algolia/1.5.2_algoliasearch@4.13.0
+      '@algolia/autocomplete-preset-algolia': registry.npmmirror.com/@algolia/autocomplete-preset-algolia/1.5.2_7938c62af9e2e3908b5b052ce2305b13
       '@docsearch/css': registry.npmmirror.com/@docsearch/css/3.0.0
+      '@types/react': registry.npmmirror.com/@types/react/18.0.1
       algoliasearch: registry.npmmirror.com/algoliasearch/4.13.0
+      react: registry.npmmirror.com/react/18.0.0
+      react-dom: registry.npmmirror.com/react-dom/18.0.0_react@18.0.0
     transitivePeerDependencies:
       - '@algolia/client-search'
+    dev: true
+
+  registry.npmmirror.com/@types/prop-types/15.7.5:
+    resolution: {integrity: sha512-JCB8C6SnDoQf0cNycqd/35A7MjcnK+ZTqE7judS6o7utxUCg6imJg3QK2qzHKszlTjcj2cn+NwMB2i96ubpj7w==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@types/prop-types/-/prop-types-15.7.5.tgz}
+    name: '@types/prop-types'
+    version: 15.7.5
+    dev: true
+
+  registry.npmmirror.com/@types/react/18.0.1:
+    resolution: {integrity: sha512-VnWlrVgG0dYt+NqlfMI0yUYb8Rdl4XUROyH+c6gq/iFCiZ805Vi//26UW38DHnxQkbDhnrIWTBiy6oKZqL11cw==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@types/react/-/react-18.0.1.tgz}
+    name: '@types/react'
+    version: 18.0.1
+    dependencies:
+      '@types/prop-types': registry.npmmirror.com/@types/prop-types/15.7.5
+      '@types/scheduler': registry.npmmirror.com/@types/scheduler/0.16.2
+      csstype: registry.npmmirror.com/csstype/3.0.11
+    dev: true
+
+  registry.npmmirror.com/@types/scheduler/0.16.2:
+    resolution: {integrity: sha512-hppQEBDmlwhFAXKJX2KnWLYu5yMfi91yazPb2l+lbJiwW+wdo1gNeRA+3RgNSO39WYX2euey41KEwnqesU2Jew==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@types/scheduler/-/scheduler-0.16.2.tgz}
+    name: '@types/scheduler'
+    version: 0.16.2
     dev: true
 
   registry.npmmirror.com/@vitejs/plugin-vue/2.3.1_vite@2.9.1+vue@3.2.31:
@@ -3007,6 +3041,12 @@ packages:
     resolution: {integrity: sha512-/WwNkdXfckNgw6S5R125rrW8ez139lBHWouiBvX8dfMFtcn6V81REDqnH7+CRpRipfYlyU1CmOnOxrmGcFOjeA==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/csstype/-/csstype-2.6.20.tgz}
     name: csstype
     version: 2.6.20
+    dev: true
+
+  registry.npmmirror.com/csstype/3.0.11:
+    resolution: {integrity: sha512-sa6P2wJ+CAbgyy4KFssIb/JNMLxFvKF1pCYCSXS8ZMuqZnMsrxqI2E5sPyoTpxoPU/gVZMzr2zjOfg8GIZOMsw==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/csstype/-/csstype-3.0.11.tgz}
+    name: csstype
+    version: 3.0.11
     dev: true
 
   registry.npmmirror.com/esbuild-android-64/0.14.28:
@@ -3306,6 +3346,21 @@ packages:
       has: registry.npmmirror.com/has/1.0.3
     dev: true
 
+  registry.npmmirror.com/js-tokens/4.0.0:
+    resolution: {integrity: sha512-RdJUflcE3cUzKiMqQgsCu06FPu9UdIJO0beYbPhHN4k6apgJtifcoCtT9bcxOpYBtpD2kCM6Sbzg4CausW/PKQ==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/js-tokens/-/js-tokens-4.0.0.tgz}
+    name: js-tokens
+    version: 4.0.0
+    dev: true
+
+  registry.npmmirror.com/loose-envify/1.4.0:
+    resolution: {integrity: sha512-lyuxPGr/Wfhrlem2CL/UcnUc1zcqKAImBDzukY7Y5F/yQiNdko6+fRLevlw1HgMySw7f611UIY408EtxRSoK3Q==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/loose-envify/-/loose-envify-1.4.0.tgz}
+    name: loose-envify
+    version: 1.4.0
+    hasBin: true
+    dependencies:
+      js-tokens: registry.npmmirror.com/js-tokens/4.0.0
+    dev: true
+
   registry.npmmirror.com/magic-string/0.25.9:
     resolution: {integrity: sha512-RmF0AsMzgt25qzqqLc1+MbHmhdx0ojF2Fvs4XnOqz2ZOBXzzkEwc/dJQZCYHAn7v1jbVOjAZfK8msRn4BxO4VQ==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/magic-string/-/magic-string-0.25.9.tgz}
     name: magic-string
@@ -3358,6 +3413,28 @@ packages:
     engines: {node: '>=6'}
     dev: true
 
+  registry.npmmirror.com/react-dom/18.0.0_react@18.0.0:
+    resolution: {integrity: sha512-XqX7uzmFo0pUceWFCt7Gff6IyIMzFUn7QMZrbrQfGxtaxXZIcGQzoNpRLE3fQLnS4XzLLPMZX2T9TRcSrasicw==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/react-dom/-/react-dom-18.0.0.tgz}
+    id: registry.npmmirror.com/react-dom/18.0.0
+    name: react-dom
+    version: 18.0.0
+    peerDependencies:
+      react: ^18.0.0
+    dependencies:
+      loose-envify: registry.npmmirror.com/loose-envify/1.4.0
+      react: registry.npmmirror.com/react/18.0.0
+      scheduler: registry.npmmirror.com/scheduler/0.21.0
+    dev: true
+
+  registry.npmmirror.com/react/18.0.0:
+    resolution: {integrity: sha512-x+VL6wbT4JRVPm7EGxXhZ8w8LTROaxPXOqhlGyVSrv0sB1jkyFGgXxJ8LVoPRLvPR6/CIZGFmfzqUa2NYeMr2A==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/react/-/react-18.0.0.tgz}
+    name: react
+    version: 18.0.0
+    engines: {node: '>=0.10.0'}
+    dependencies:
+      loose-envify: registry.npmmirror.com/loose-envify/1.4.0
+    dev: true
+
   registry.npmmirror.com/resolve/1.22.0:
     resolution: {integrity: sha512-Hhtrw0nLeSrFQ7phPp4OOcVjLPIeMnRlr5mcnVuMe7M/7eBn98A3hmFRLoFo3DLZkivSYwhRUJTyPyWAk56WLw==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/resolve/-/resolve-1.22.0.tgz}
     name: resolve
@@ -3377,6 +3454,14 @@ packages:
     hasBin: true
     optionalDependencies:
       fsevents: registry.npmmirror.com/fsevents/2.3.2
+    dev: true
+
+  registry.npmmirror.com/scheduler/0.21.0:
+    resolution: {integrity: sha512-1r87x5fz9MXqswA2ERLo0EbOAU74DpIUO090gIasYTqlVoJeMcl+Z1Rg7WHz+qtPujhS/hGIt9kxZOYBV3faRQ==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/scheduler/-/scheduler-0.21.0.tgz}
+    name: scheduler
+    version: 0.21.0
+    dependencies:
+      loose-envify: registry.npmmirror.com/loose-envify/1.4.0
     dev: true
 
   registry.npmmirror.com/source-map-js/1.0.2:
@@ -3432,15 +3517,16 @@ packages:
       fsevents: registry.npmmirror.com/fsevents/2.3.2
     dev: true
 
-  registry.npmmirror.com/vitepress/0.22.3:
+  registry.npmmirror.com/vitepress/0.22.3_7aebf275a2dd6217dfaf0027c04ea273:
     resolution: {integrity: sha512-Yfvu/rent2vp/TXIDZMutS6ft2TJPn4xngS48PYFWDEbuFI2ccUAXM481lF1qVVnCKxfh4g8e/KPvevSJdg1Bw==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/vitepress/-/vitepress-0.22.3.tgz}
+    id: registry.npmmirror.com/vitepress/0.22.3
     name: vitepress
     version: 0.22.3
     engines: {node: '>=14.0.0'}
     hasBin: true
     dependencies:
       '@docsearch/css': registry.npmmirror.com/@docsearch/css/3.0.0
-      '@docsearch/js': registry.npmmirror.com/@docsearch/js/3.0.0
+      '@docsearch/js': registry.npmmirror.com/@docsearch/js/3.0.0_7aebf275a2dd6217dfaf0027c04ea273
       '@vitejs/plugin-vue': registry.npmmirror.com/@vitejs/plugin-vue/2.3.1_vite@2.9.1+vue@3.2.31
       prismjs: registry.npmmirror.com/prismjs/1.27.0
       vite: registry.npmmirror.com/vite/2.9.1
