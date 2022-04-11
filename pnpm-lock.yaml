@@ -44,7 +44,10 @@ importers:
     specifiers: {}
 
   packages/vue-compositions:
-    specifiers: {}
+    specifiers:
+      '@passkey/vue-compositions': workspace:^0.0.1
+    dependencies:
+      '@passkey/vue-compositions': 'link:'
 
 packages:
 

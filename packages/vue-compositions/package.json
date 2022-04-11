@@ -14,5 +14,8 @@
         "prepare": "pnpm run build"
     },
     "author": "",
-    "license": "MIT"
+    "license": "MIT",
+    "dependencies": {
+        "@passkey/vue-compositions": "workspace:^0.0.1"
+    }
 }
