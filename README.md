@@ -2,4 +2,4 @@
 
 Solution collections which is like passkey make you feel easy!!!
 
-![key](./key.svg)
+![key](./assets/key.svg)
